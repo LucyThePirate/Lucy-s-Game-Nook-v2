@@ -7,8 +7,8 @@
   background-image: url("art/pinkiepiespin.gif");
   background-repeat: repeat;
   background-size: 20%;
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 300%;
 
   display: grid;
   grid:
@@ -20,11 +20,11 @@
 }
 
 
-.header { grid-area: header; min-width: 300px; background-color:rgb(184, 107, 255); font-family: DS; font-size: x-large }
-.leftSide { grid-area: leftSide; min-width: 300px; background-color: rgb(245, 105, 175); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
-.body { grid-area: body; min-width: 300px; background-image: url("art/pixelArt.png"); background-color: chartreuse;}
-.rightSide { grid-area: rightSide; min-width: 300px; background-color:aqua}
-.footer { grid-area: footer; background-color:rgb(220, 100, 20)}
+.header { grid-area: header; min-width: 300px; background-color:rgb(184, 107, 255, 0.75); font-family: DS; font-size: x-large; }
+.leftSide { grid-area: leftSide; min-width: 300px; background-color: rgb(245, 105, 175, 0.75); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+.body { grid-area: body; min-width: 300px; background-image: url("art/pixelArt.png"); background-color: rgb(127, 255, 0, 0.75);}
+.rightSide { grid-area: rightSide; min-width: 300px; background-color:rgb(0, 255, 255, 0.75)}
+.footer { grid-area: footer; background-color:rgb(220, 100, 20, 0.75)}
 
 .buttonRow { white-space: nowrap;}
 
