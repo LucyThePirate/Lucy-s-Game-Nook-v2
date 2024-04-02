@@ -5,6 +5,7 @@
 
 .layout {
   background-image: url("art/pinkiepiespin.gif");
+  background-repeat: repeat;
   background-size: 20%;
   width: 100%;
   height: 100%;
