@@ -40,8 +40,10 @@
 .body { 
   grid-area: body; 
   min-width: 300px; 
-  background-image: url("art/pixelArt.png"); 
-  background-color: rgb(127, 255, 0, 0.75); 
+  /* background-image: url("art/panel.png"); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: rgb(127, 255, 0, 0.75);
   padding: 8px;
 }
 .rightSide { 
@@ -63,4 +65,12 @@
 
 #GamesButton:hover {
   background-image: url('art/GamesButtonHighlighted.png');
+}
+
+#ArtBanner {
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position-y: 80px;
+  background-position-x: center;
+  background-image: url(art/art_banner.gif)
 }

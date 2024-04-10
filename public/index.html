@@ -7,10 +7,10 @@
       <img src="art/GamesButton.png" onmouseover="this.src='art/GamesButtonHighlighted.png';" onmouseout="this.src='art/GamesButton.png';">
     </a>
     <a>
-      <img src="art/NothingButton.png">
+      <img src="art/art_bucket.png" width="10%" id="ArtBanner" onmouseover="animateArtBucketUp()" onmouseout="animateArtBucketDown()">
     </a>
-    <a>
-      <img src="art/NothingButton.png">
+    <a href="manyland_shrine.html">
+      <img src="art/manyland_shrine.png" width="15%">
     </a>
     <a>
       <img src="art/NothingButton.png">
@@ -43,6 +43,7 @@
   <div class="rightSide">
     <div class="header">Announcements</div>
     <ul>
+        <li>4/9/24 - Did you see that eclipse yesterday? I thought it was awesome! I got a lot of rare items from the Moon Raid event, too. Anyways, I'm workin' on adding some buttons for my art and also the Manyland Shrine. <p>Have you heard of Manyland? Probably not, but stick around and I shall weave my tale about a game that once was.</p></li>
         <li>3/20/24 - Behold!!! I made a trailer for the tank game! It's free, too! Check out the trailer, here: <p></p>
           <a href="https://www.youtube.com/watch?v=Mbiz7o3mR-o"><image width="400px", src="art/AllTankedUpPrototypeLogo.png"></image></a></li>
         <li>3/17/24 - I added a Games button for the stuff I've made!... Well, maybe it should be called the "Game" button, since it only links to one game I made. It is a cool game though, I think. Go check it out, it's got this little dude in it! <p><image src="art/peasintTank.png" width="200px"></image></p></li>
@@ -58,5 +59,40 @@
       var audio = new Audio('https://www.mariowiki.com/images/9/9d/Kremling_SFX_1.oga');
       audio.play();
   }
+
+  var id = null;
+  var art_banner_pos = 70;
+  function animateArtBucketUp() {
+    var bucket = document.getElementById("ArtBanner");
+    console.log("(up) art_banner_pos is:", art_banner_pos);
+    clearInterval(id);
+    id = setInterval(frame, 10);
+    function frame() {
+      if (art_banner_pos <= 0) {
+        clearInterval(id);
+      }
+      else {
+        art_banner_pos -= 3;
+        bucket.style.backgroundPositionY = art_banner_pos + "px";
+      }
+    }
+  }
+
+  function animateArtBucketDown() {
+    var bucket = document.getElementById("ArtBanner");
+    console.log("(down) art_banner_pos is:", art_banner_pos);
+    clearInterval(id);
+    id = setInterval(frame, 10);
+    function frame() {
+      if (art_banner_pos >= 70) {
+        clearInterval(id);
+      }
+      else {
+        art_banner_pos += 2;
+        bucket.style.backgroundPositionY = art_banner_pos + "px";
+      }
+    }
+  }
+
 
 </script>
