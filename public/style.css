@@ -49,6 +49,7 @@
   text-align: center;
 }
 .manyland_header{
+  margin: 0 auto;
   grid-area: header; 
   width: 80%;
   font-family: DS; font-size: x-large; 
@@ -71,6 +72,7 @@
   padding: 8px;
 }
 .manyland_body {
+  margin: 0 auto;
   width: 80%;
   grid-area: body; 
   padding: 8px;
