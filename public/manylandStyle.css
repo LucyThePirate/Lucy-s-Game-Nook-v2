@@ -1,11 +1,11 @@
 @font-face {
   font-family: DS;
-  src: url("Nintendo-DS-BIOS.ttf");
+  src: url("assets/font/Nintendo-DS-BIOS.ttf");
 }
 
 @font-face {
   font-family: permanent-marker;
-  src: url("Permanentmarker-Regular.ttf");
+  src: url("assets/font/Permanentmarker-Regular.ttf");
 }
 
 h1 {
@@ -22,7 +22,7 @@ header {
 }
 
 body {
-  background-image: url("img/glitter.jpg");
+  background-image: url("assets/UI/glitter.jpg");
   background-repeat: repeat;
   background-size: 100%;
   background-attachment: fixed;

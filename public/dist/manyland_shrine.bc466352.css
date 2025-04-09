@@ -1,0 +1,130 @@
+@font-face {
+  font-family: DS;
+  src: url("Nintendo-DS-BIOS.ab7edba8.ttf");
+}
+
+@font-face {
+  font-family: permanent-marker;
+  src: url("Permanentmarker-Regular.aa2c9917.ttf");
+}
+
+h1 {
+  font-family: permanent-marker;
+}
+
+h1, h2 {
+  text-shadow: 2px 2px #fff, -2px 2px #fff, 2px -2px #fff, -2px -2px #fff;
+}
+
+header {
+  background-color: #000;
+  padding: 2px;
+}
+
+body {
+  background-blend-mode: hard-light;
+  text-align: center;
+  text-align: center;
+  color: #f0f;
+  text-align: center;
+  background-color: #0003;
+  background-image: url("glitter.1eb149c7.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  grid-area: header;
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+  padding: 8px;
+  font-family: DS;
+  font-size: x-large;
+  animation: 30s infinite shimmer;
+  overflow: hidden scroll;
+}
+
+.manyland_header {
+  color: #fff5e3;
+  text-align: left;
+  background-color: #d41eade6;
+  border: 5px solid #8e0a72e6;
+  border-radius: 5px;
+  grid-area: header;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px;
+  font-family: permanent-marker;
+  font-size: x-large;
+}
+
+.manyland_body {
+  color: #000;
+  text-align: left;
+  background-color: #b3faa5e6;
+  border: 5px solid #548a49e6;
+  border-radius: 5px;
+  grid-area: body;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+#footer {
+  color: #000;
+  background-color: #fff;
+  border: 5px solid #868686;
+  border-radius: 5px;
+  grid-area: footer;
+  margin: 10px;
+  padding: 5px;
+}
+
+.ml_screenshots {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+figcaption {
+  font-size: larger;
+  font-weight: bold;
+}
+
+@keyframes move-it {
+  0% {
+    background-position: initial;
+  }
+
+  100% {
+    background-position: 300px -100px;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: initial;
+    background-color: initial;
+  }
+
+  25% {
+    background-color: #0f0;
+    background-position: 50px 50px;
+  }
+
+  50% {
+    background-color: #0ff;
+    background-position: 25px 25px;
+  }
+
+  75% {
+    background-color: #ff5e00;
+    background-position: -25px -25px;
+  }
+
+  100% {
+    background-position: initial;
+    background-color: initial;
+  }
+}
+/*# sourceMappingURL=manyland_shrine.bc466352.css.map */

@@ -1,0 +1,156 @@
+@font-face {
+  font-family: DS;
+  src: url("Nintendo-DS-BIOS.ab7edba8.ttf");
+}
+
+.layout {
+  background-image: url("pinkiepiespin.69a1c705.gif");
+  background-repeat: repeat;
+  background-size: 20%;
+  background-attachment: fixed;
+  grid: "header header header"
+        "leftSide body rightSide" 1fr
+        "footer footer footer"
+        / auto 1fr auto;
+  gap: 8px;
+  width: 100%;
+  margin: 0;
+  animation: 9s linear infinite move-it;
+  display: grid;
+}
+
+.layout2 {
+  background-blend-mode: hard-light;
+  text-align: center;
+  background-image: url("glitter.1eb149c7.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  animation: 30s infinite shimmer;
+  overflow: hidden scroll;
+}
+
+.header {
+  text-align: center;
+  background-color: #b86bffbf;
+  grid-area: header;
+  min-width: 300px;
+  padding: 8px;
+  font-family: DS;
+  font-size: x-large;
+}
+
+.manyland_header {
+  color: #fce3b6;
+  text-align: left;
+  background-color: #d41eade6;
+  grid-area: header;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px;
+  font-family: DS;
+  font-size: x-large;
+}
+
+.leftSide {
+  background-color: #f569afbf;
+  grid-area: leftSide;
+  min-width: 300px;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+}
+
+.body {
+  background-color: #7fff00bf;
+  background-size: 100% 100%;
+  grid-area: body;
+  min-width: 300px;
+  padding: 8px;
+}
+
+.manyland_body {
+  color: #000;
+  text-align: left;
+  background-color: #b3faa5e6;
+  grid-area: body;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.rightSide {
+  background-color: #00ffffbf;
+  grid-area: rightSide;
+  min-width: 300px;
+  overflow: hidden scroll;
+}
+
+.footer {
+  background-color: #dc6414bf;
+  grid-area: footer;
+}
+
+.buttonRow {
+  white-space: nowrap;
+}
+
+.ml_screenshots {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#GamesButton {
+  background-image: url("GamesButton.4e5dbecf.png");
+  width: 159px;
+  height: 91px;
+}
+
+#GamesButton:hover {
+  background-image: url("GamesButtonHighlighted.88fd2185.png");
+}
+
+#ArtBanner {
+  background-image: url("art_banner.6bb41505.gif");
+  background-position: 50% 80px;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+@keyframes move-it {
+  0% {
+    background-position: initial;
+  }
+
+  100% {
+    background-position: 300px -100px;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: initial;
+    background-color: initial;
+  }
+
+  25% {
+    background-color: #0f0;
+    background-position: 50px 50px;
+  }
+
+  50% {
+    background-color: #0ff;
+    background-position: 25px 25px;
+  }
+
+  75% {
+    background-color: #ff5e00;
+    background-position: -25px -25px;
+  }
+
+  100% {
+    background-position: initial;
+    background-color: initial;
+  }
+}
+/*# sourceMappingURL=public.3a01df49.css.map */
